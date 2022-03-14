@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>Ejercicio6Calculadora</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script src='calculadora.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+</head>
+
+<body>
+    <main> 
+        <h1>Ejercicio Calculadora</h1>
+        <input id="numero1" type="text" placeholder="Operando1">
+        <select id="select" name="select" onchange="calcular()">
+            <option selected disabled hidden value=''></option> 
+        <!-- 
+            "selected" hace que esta opción la plantilla predeterminada. 
+            "disabled" hace que esta opción sea inutilizable y no se pueda hacer clic.
+            "hidden" hace que esta opción no aparezca en la lista desplegable. -->
+
+            <option value="value1">+</option>
+            <option value="value2">-</option>
+            <option value="value3">*</option>
+            <option value="value3">/</option>
+        </select>
+        <input id="numero2" type="text" placeholder="Operando2">
+        =
+        <input id="solucion" type="text" placeholder="0" readonly>
+        <button onclick="calcular()">Calcular</button>
+        <br>
+        <a href="index.html">Volver</a>
+
+    </main>
+</body>
+
+</html>

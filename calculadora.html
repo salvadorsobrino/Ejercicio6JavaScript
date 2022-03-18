@@ -11,23 +11,24 @@
 
     <script src='calculadora.js'></script>
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <link rel="icon" href="calculadora.png">
 </head>
 
 <body>
     <main> 
         <h1>Ejercicio Calculadora</h1>
         <input id="numero1" type="text" placeholder="Operando1">
-        <select id="select" name="select" onchange="calcular()">
+        <select id="select" name="select">
             <option selected disabled hidden value=''></option> 
         <!-- 
             "selected" hace que esta opción la plantilla predeterminada. 
             "disabled" hace que esta opción sea inutilizable y no se pueda hacer clic.
             "hidden" hace que esta opción no aparezca en la lista desplegable. -->
 
-            <option value="value1">+</option>
-            <option value="value2">-</option>
-            <option value="value3">*</option>
-            <option value="value3">/</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
         </select>
         <input id="numero2" type="text" placeholder="Operando2">
         =
